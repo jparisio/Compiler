@@ -1,7 +1,7 @@
 
 # Compilers Development
 
-Made By ustin Parisio, Gavin Eugenio, and Aidan Wylie
+Made By Justin Parisio, Gavin Eugenio, and Aidan Wylie
 
 A compiler implementation for the C Minus programming language using JFlex and CUP. Performs syntactic and semantic analysis, and generates abstract syntax trees, symbol tables, and TM assembly code.
 

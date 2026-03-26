@@ -1,0 +1,13 @@
+/* Test Case 4: Tests redeclaration, undeclared variable use, incorrect type assignment */
+
+void main(void) {
+    int x;
+    bool y;
+
+    int x;      /* Error: 'x' already declared */
+
+    x = z;      /* Error: 'z' is undeclared */
+
+    y = 1;      /* Error: assigning int to bool */
+    
+}

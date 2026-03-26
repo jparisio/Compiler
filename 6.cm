@@ -1,0 +1,18 @@
+/* Test Case 6: Tests array indexing with non-integer values */
+
+void main(void) {
+    int y;
+    int arr[3];
+    bool flag;
+
+    arr[flag] = 5;  /* Error: array index must be an integer */
+
+    y = 2;
+    arr[y] = 3;
+
+    arr[x] = 4;    /* Error: 'x' is undeclared */
+
+    arr[2] = false; /* Error: array value must be an integer */
+
+    output(arr[0]);
+}

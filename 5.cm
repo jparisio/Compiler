@@ -1,0 +1,29 @@
+/* Test Case 5: Tests function prototype mismatch, wrong return types */
+
+int foo(int x) { 
+    return x + 1; 
+}
+
+
+int test(int x) { 
+    if(x){
+        return 2;   /* Error: return statement not always reached */
+    }
+}
+
+void bar(void) {
+    int test;
+
+    test = foo(1);
+
+    return 10;      /* Error: void function returning int */
+}
+
+
+void main(void) {
+    int result;
+
+    result = foo(true);  /* Error: function expects int but bool is passed */
+
+    output(result);
+}

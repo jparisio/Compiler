@@ -1,0 +1,58 @@
+/* Test Case 7:  testing against variable within an array declrataions  
+as well as no semi colon after a return statement and missing semi colon after variable declaration;
+*/
+
+int x[d];               /* error cannot have a expr in a var dec brackets*/
+
+int minloc(int a[], int low, int high) {
+  int i; 
+  int x; 
+  int k;
+a[0]=1;
+  k = low;
+  x = a[low];               
+  i = low + 1;
+  while (i < high) {
+    if (a[i] < x) {
+       x = a[i];
+       k = i; 
+    }
+    i = i + 1;
+  } 
+  return                 /* error no semi colon */          
+}
+
+void sort(int a[], int low, int high) {
+  int i; 
+  int k;
+
+  i = low;
+  while (i < high - 1) {
+    int t;
+    k = minloc(a, i, high);
+    t = a[k];
+    a[k] = a[i];
+    a[i] = t;
+    i = i + 1;
+  }
+}
+
+void main(void) {
+  int i                 /* error no semi colon */
+
+  i = 0;
+  while (i < 10) {
+    x[i] = input();
+    i = i + 1;
+  }
+
+  sort(x, 0, 10);
+
+  i = 0;
+  while (i < 10) {
+    output(x[i]);
+    i = i + 1;
+  }
+}
+
+

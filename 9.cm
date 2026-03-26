@@ -1,0 +1,47 @@
+/* Test Case 9 checks the following errors:
+Missing Semi Colon from variable decloration
+Mising right curly bracket from combined statement (If, while, function) 
+Missing expression to the right of an operation(||,&&,<,<=,>,>=,+,-,*,/,~)
+Missing Semi Colon from Assignment operation*/
+
+void main(void) {
+  int x; 
+  int fac             /* error no semi colon */
+  bool test;
+
+  x = input();
+  fac = 1;
+  if(test){
+    fac = 2;
+  }
+  test = x > 1;
+ if (test) {
+    fac = fac * x;
+    x = x - 1;
+    if (test){
+    test = x > 1;
+    }
+
+  output(fac);
+}
+
+                      /* error no closing brace */
+
+void ops(void){                  /* all errors below operators are missing values */
+  x / ;
+  y * ;
+  z + ;
+  a - ;
+  ~;
+  1 &&;
+  false ||;
+  x<;
+  5>;
+  x<=;
+  true>=;
+}
+
+int assign(void) {
+    x = ;
+}
+

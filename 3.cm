@@ -1,0 +1,24 @@
+/* Test Case 3: Testing array indexing and assignment */
+
+void main(void) {
+  int arr[6];
+  int x;
+  int y;
+  y=0;
+  arr[0] = 5;
+  x = 1;
+  arr[x] = 9000;
+
+  output(arr[x]);
+  output(arr[y]);
+  output(arr[1]);
+
+  arr[1] = 99;
+  output(arr[1]);
+
+  arr[5] = 0;
+
+  output(arr[5]);
+  output(arr[1]);
+  output(arr[0]);
+}

@@ -1,0 +1,20 @@
+/* Test Case 2: Tests function calls and parameter passing */
+
+void mio(int riku, int eunie) {
+  output(riku);
+  output(eunie);
+}
+
+void main(void) {
+  int riku;
+  int eunie;
+
+  riku = 500;
+  eunie = 32;
+
+  mio(riku, eunie);
+
+  output(riku);
+  output(eunie);
+}
+

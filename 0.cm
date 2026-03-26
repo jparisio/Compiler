@@ -1,0 +1,34 @@
+/* Test Case 10: A mix of various semantic errors including: 
+Boolean condition type mismatch
+Assignment type mismatch
+Undeclared variable use
+Undeclared function use
+Incorrect return type
+Missing return value*/
+
+void main(void) {
+    int x;
+    int arr[4];
+    bool y;
+    void z;
+
+    if (z) {        /* Error: condition must be boolean */
+        int z;
+        int x;
+        y = 5;      /* Error: assigning int to bool */
+    }
+
+    type = 5;          /* Error: 'type' is undeclared */
+
+    foo();          /* Error: function 'foo' not declared */
+
+    return 1;       /* Error: void function returning int */
+}
+
+int bar(int a, int b) {
+    return;         /* Error: missing return value in non-void function */
+}
+
+int invalid(void) {
+    x = 5;          /* Error: 'x' is undeclared */
+}

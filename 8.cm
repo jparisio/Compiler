@@ -1,0 +1,25 @@
+/* Test Case 8: testing against missing ] and semi colons */
+
+int main(void){
+
+    int x; 
+    int fac;
+    bool test;
+    int y[1   /* error no closing bracket */
+    int z[2] /* error no semi colon */
+
+    test = x > 1;
+
+    fac = 1;
+    test = x > 1;
+    while (test) {
+        fac = fac * x;
+        x = x - 1;
+        test = x > 1;
+    } 
+
+    x = input();
+
+}
+
+
